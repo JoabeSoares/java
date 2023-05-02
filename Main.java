@@ -1,14 +1,25 @@
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double a;
-        int b;
+        Locale.setDefault(Locale.US);
+        Scanner sc= new Scanner(System.in);
 
-        a = 5.0;
-        b = (int) a;
+        String x;
+        int y;
+        double z;
 
-    
+        x = sc.next();
+        y = sc.nextInt();
+        z = sc.nextDouble();
+        System.out.println("Dados digitados: ");
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
 
-        System.out.println(b);
+
+        sc.close();
     }
 }
 
