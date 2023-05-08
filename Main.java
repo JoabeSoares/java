@@ -3,14 +3,19 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String x = sc.nextLine();
-        String palavras = "parou";
 
-        while (x != String) {
-            palavras += x;
-            x = sc.next();
+        int x = sc.nextInt();
+
+        while (x != 2002){
+            
+            System.out.println("Senha inválida! Tente novamente...");
+            x = sc.nextInt();
         } 
-        System.out.println(palavras);
+
+        System.out.println("Acesso permitido.");
+        
+
         sc.close();
+        }
     }
-    }
+
